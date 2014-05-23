@@ -11,17 +11,12 @@ body {
   position: relative;
   overflow: hidden;
   background: #fff;
-
-
-
-
-
+  font-family: 'Lato', sans-serif;
 }
 
 .letter {
-  font-family: arial, helvetica, sans-serif;
   font-size: 50px;
-  @include text-shadow(2px 2px 3px #000);
+  @include text-shadow(2px 2px 3px #0054a6);
 }
 
 #pool {
@@ -83,7 +78,7 @@ body {
   @include animation-delay(3s);
   @include animation-play-state(running);
   @include animation-fill-mode(forwards);
-  color: #0054a6;
+  color: #00aeef;
 
 }
 
@@ -207,7 +202,7 @@ body {
   &.letter {
     font-size: 100px;
     color: red;
-    @include text-shadow(2px 2px 3px #000);
+    @include text-shadow(2px 2px 3px #0054a6);
   }
 }
 
@@ -258,7 +253,7 @@ body {
 
   50% {
     bottom: 460px;
-    left: 280px;
+    left: 320px;
     opacity: 1;
     @include scale3d(1,1,1);
   }
@@ -266,7 +261,7 @@ body {
 
   60% {
     bottom: 420px;
-    left: 270px;
+    left: 320px;
     opacity: 1;
     @include scale3d(2,2,5);
     @include rotateX(180deg);
@@ -277,23 +272,23 @@ body {
   65% {
     //@include rotateZ(180deg);
     bottom: 400px;
-    left: 270px;
+    left: 320px;
     opacity: 1;
   }
 
   70% {
     //@include rotateZ(180deg);
     bottom: 350px;
-    left: 270px;
+    left: 320px;
     opacity: 1;
     @include scale3d(1,1,1);
   }
 
 
   100% {
-    //@include rotateZ(170deg);
+    @include scale(.75);
     bottom: 0px;
-    left: 270px;
+    left: 320px;
     opacity: 0;
 
   }
@@ -301,6 +296,203 @@ body {
 
 }
 
+
+#D {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  @include animation-name(letterD);
+  @include animation-duration(8s);
+  @include animation-timing-function(linear);
+  @include animation-direction(normal);
+  @include animation-iteration-count(1);
+  @include animation-delay(10s);
+  @include animation-play-state(running);
+  @include animation-fill-mode(forwards);
+
+  &.letter {
+    font-size: 25px;
+    color: #fff200;
+    @include text-shadow(2px 2px 3px #d37c3c);
+  }
+}
+
+@include keyframes(letterD) {
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0;
+  }
+  5% {
+    bottom: 80px;
+    left: 10px;
+  }
+  10% {
+    bottom: 60px;
+    left: 15px;
+  }
+  15% {
+    bottom: 150px;
+    left: 40px;
+  }
+  20% {
+    bottom: 130px;
+    left: 60px;
+  }
+  25% {
+    bottom: 250px;
+    left: 80px;
+  }
+  30% {
+    bottom: 200px;
+    left: 90px;
+  }
+  35% {
+    bottom: 350px;
+    left: 120px;
+  }
+  40% {
+    bottom: 300px;
+    left: 160px;
+  }
+
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1;
+  }
+
+  50% {
+    bottom: 460px;
+    left: 320px;
+    opacity: 1;
+    @include scale3d(2,2,2);
+  }
+
+
+  60% {
+    bottom: 420px;
+    left: 320px;
+    opacity: 1;
+    @include rotateX(-180deg);
+    @include rotateY(-180deg);
+    /*@include scale3d(1,1,1);*/
+  }
+
+  65% {
+    @include scale3d(5,5,5);
+    bottom: 400px;
+    left: 320px;
+    opacity: 1;
+  }
+
+  70% {
+    @include rotateZ(180deg);
+    bottom: 350px;
+    left: 320px;
+    opacity: 1;
+    @include scale3d(.25, .25, .25);
+  }
+
+  80% {
+    @include rotateY(180deg);
+    bottom: 200px;
+    left: 320px;
+    opacity: 1;
+    @include scale3d(2, 2, 2);
+  }
+
+
+  100% {
+    bottom: 0px;
+    left: 320px;
+    opacity: 0;
+    @include scale3d(3, 3, 3);
+
+  }
+
+
+}
+
+#splashgroup {
+  position: absolute;
+  bottom: 6px;
+  left: 200px;
+
+  width: 100px;
+  height: 100px;
+
+  div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: blue;
+    opacity: 0;
+    @include border-radius(50%);
+    @include animation-duration(.5s);
+    @include animation-timing-function(linear);
+    @include animation-direction(normal);
+    @include animation-iteration-count(1);
+    @include animation-delay(0);
+    @include animation-play-state(running);
+    @include animation-fill-mode(forwards);
+  }
+
+  #splash1 {
+    @include animation-name(splash1);
+  }
+  #splash2 {
+    @include animation-name(splash2);
+  }
+
+
+}
+
+@include keyframes(splash1) {
+  30% {
+    left: -75px;
+    top: -100px;
+    opacity: 1;
+  }
+
+  60% {
+    left: -125px;
+    top: -130px;
+    opacity: 1;
+  }
+  100% {
+    left: -170px;
+    top: 0px;
+    opacity: 0;
+  }
+}
+
+@include keyframes(splash2) {
+  0% {
+    left: 200px;
+    top: -100px;
+    opacity: 1;
+  }
+  30% {
+    left: 150px;
+    top: -280px;
+    opacity: 1;
+  }
+
+  60% {
+    left: 100px;
+    top: -130px;
+    opacity: 1;
+  }
+  100% {
+    left: 90px;
+    top: 0px;
+    opacity: 1;
+  }
+}
 
 
 

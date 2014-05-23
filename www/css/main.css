@@ -71,15 +71,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   perspective-origin: 75% 25%;
   position: relative;
   overflow: hidden;
-  background: #fff; }
+  background: #fff;
+  font-family: 'Lato', sans-serif; }
 
-/* line 21, src/_summer.scss */
+/* line 17, src/_summer.scss */
 .letter {
-  font-family: arial, helvetica, sans-serif;
   font-size: 50px;
-  text-shadow: 2px 2px 3px black; }
+  text-shadow: 2px 2px 3px #0054a6; }
 
-/* line 27, src/_summer.scss */
+/* line 22, src/_summer.scss */
 #pool {
   height: 361px;
   width: 430px;
@@ -100,40 +100,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   opacity: .75;*/ }
 
 @-moz-keyframes pool {
-  /* line 48, src/_summer.scss */
+  /* line 43, src/_summer.scss */
   100% {
     -moz-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
     opacity: 1; } }
 
 @-webkit-keyframes pool {
-  /* line 48, src/_summer.scss */
+  /* line 43, src/_summer.scss */
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
     opacity: 1; } }
 
 @-o-keyframes pool {
-  /* line 48, src/_summer.scss */
+  /* line 43, src/_summer.scss */
   100% {
     -o-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
     opacity: 1; } }
 
 @-ms-keyframes pool {
-  /* line 48, src/_summer.scss */
+  /* line 43, src/_summer.scss */
   100% {
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
     opacity: 1; } }
 
 @keyframes pool {
-  /* line 48, src/_summer.scss */
+  /* line 43, src/_summer.scss */
   100% {
     transform: scale3d(1, 1, 1);
     opacity: 1; } }
 
-/* line 54, src/_summer.scss */
+/* line 49, src/_summer.scss */
 #ladder {
   height: 500px;
   width: 95px;
@@ -182,7 +182,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 73, src/_summer.scss */
+/* line 68, src/_summer.scss */
 #M {
   position: absolute;
   bottom: 0;
@@ -228,139 +228,139 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -ms-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  color: #0054a6; }
+  color: #00aeef; }
 
 @-moz-keyframes ladder {
-  /* line 91, src/_summer.scss */
+  /* line 86, src/_summer.scss */
   0% {
     bottom: -500px; }
 
-  /* line 95, src/_summer.scss */
+  /* line 90, src/_summer.scss */
   70% {
     bottom: 0;
     -moz-transform: rotateY(90deg);
     transform: rotateY(90deg); }
 
-  /* line 100, src/_summer.scss */
+  /* line 95, src/_summer.scss */
   100% {
     -moz-transform: rotateX(45deg);
     transform: rotateX(45deg);
     bottom: 0; } }
 
 @-webkit-keyframes ladder {
-  /* line 91, src/_summer.scss */
+  /* line 86, src/_summer.scss */
   0% {
     bottom: -500px; }
 
-  /* line 95, src/_summer.scss */
+  /* line 90, src/_summer.scss */
   70% {
     bottom: 0;
     -webkit-transform: rotateY(90deg);
     transform: rotateY(90deg); }
 
-  /* line 100, src/_summer.scss */
+  /* line 95, src/_summer.scss */
   100% {
     -webkit-transform: rotateX(45deg);
     transform: rotateX(45deg);
     bottom: 0; } }
 
 @-o-keyframes ladder {
-  /* line 91, src/_summer.scss */
+  /* line 86, src/_summer.scss */
   0% {
     bottom: -500px; }
 
-  /* line 95, src/_summer.scss */
+  /* line 90, src/_summer.scss */
   70% {
     bottom: 0;
     -o-transform: rotateY(90deg);
     transform: rotateY(90deg); }
 
-  /* line 100, src/_summer.scss */
+  /* line 95, src/_summer.scss */
   100% {
     -o-transform: rotateX(45deg);
     transform: rotateX(45deg);
     bottom: 0; } }
 
 @-ms-keyframes ladder {
-  /* line 91, src/_summer.scss */
+  /* line 86, src/_summer.scss */
   0% {
     bottom: -500px; }
 
-  /* line 95, src/_summer.scss */
+  /* line 90, src/_summer.scss */
   70% {
     bottom: 0;
     -ms-transform: rotateY(90deg);
     transform: rotateY(90deg); }
 
-  /* line 100, src/_summer.scss */
+  /* line 95, src/_summer.scss */
   100% {
     -ms-transform: rotateX(45deg);
     transform: rotateX(45deg);
     bottom: 0; } }
 
 @keyframes ladder {
-  /* line 91, src/_summer.scss */
+  /* line 86, src/_summer.scss */
   0% {
     bottom: -500px; }
 
-  /* line 95, src/_summer.scss */
+  /* line 90, src/_summer.scss */
   70% {
     bottom: 0;
     transform: rotateY(90deg); }
 
-  /* line 100, src/_summer.scss */
+  /* line 95, src/_summer.scss */
   100% {
     transform: rotateX(45deg);
     bottom: 0; } }
 
 @-moz-keyframes letterM {
-  /* line 107, src/_summer.scss */
+  /* line 102, src/_summer.scss */
   0% {
     opacity: 1;
     bottom: 0;
     left: 0; }
 
-  /* line 112, src/_summer.scss */
+  /* line 107, src/_summer.scss */
   5% {
     bottom: 80px;
     left: 10px; }
 
-  /* line 116, src/_summer.scss */
+  /* line 111, src/_summer.scss */
   10% {
     bottom: 60px;
     left: 15px; }
 
-  /* line 120, src/_summer.scss */
+  /* line 115, src/_summer.scss */
   15% {
     bottom: 150px;
     left: 40px; }
 
-  /* line 124, src/_summer.scss */
+  /* line 119, src/_summer.scss */
   20% {
     bottom: 130px;
     left: 60px; }
 
-  /* line 128, src/_summer.scss */
+  /* line 123, src/_summer.scss */
   25% {
     bottom: 250px;
     left: 80px; }
 
-  /* line 132, src/_summer.scss */
+  /* line 127, src/_summer.scss */
   30% {
     bottom: 200px;
     left: 90px; }
 
-  /* line 136, src/_summer.scss */
+  /* line 131, src/_summer.scss */
   35% {
     bottom: 350px;
     left: 120px; }
 
-  /* line 140, src/_summer.scss */
+  /* line 135, src/_summer.scss */
   40% {
     bottom: 300px;
     left: 160px; }
 
-  /* line 145, src/_summer.scss */
+  /* line 140, src/_summer.scss */
   45% {
     bottom: 430px;
     left: 230px;
@@ -368,7 +368,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -moz-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 152, src/_summer.scss */
+  /* line 147, src/_summer.scss */
   50% {
     bottom: 430px;
     left: 250px;
@@ -376,7 +376,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -moz-transform: rotate(45deg);
     transform: rotate(45deg); }
 
-  /* line 160, src/_summer.scss */
+  /* line 155, src/_summer.scss */
   60% {
     -moz-transform: rotate(170deg);
     transform: rotate(170deg);
@@ -384,7 +384,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 270px;
     opacity: 1; }
 
-  /* line 167, src/_summer.scss */
+  /* line 162, src/_summer.scss */
   65% {
     -moz-transform: rotate(170deg);
     transform: rotate(170deg);
@@ -392,7 +392,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 270px;
     opacity: 1; }
 
-  /* line 174, src/_summer.scss */
+  /* line 169, src/_summer.scss */
   70% {
     -moz-transform: rotate(180deg);
     transform: rotate(180deg);
@@ -400,7 +400,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 270px;
     opacity: 1; }
 
-  /* line 182, src/_summer.scss */
+  /* line 177, src/_summer.scss */
   100% {
     -moz-transform: rotate(170deg);
     transform: rotate(170deg);
@@ -409,53 +409,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     opacity: 0; } }
 
 @-webkit-keyframes letterM {
-  /* line 107, src/_summer.scss */
+  /* line 102, src/_summer.scss */
   0% {
     opacity: 1;
     bottom: 0;
     left: 0; }
 
-  /* line 112, src/_summer.scss */
+  /* line 107, src/_summer.scss */
   5% {
     bottom: 80px;
     left: 10px; }
 
-  /* line 116, src/_summer.scss */
+  /* line 111, src/_summer.scss */
   10% {
     bottom: 60px;
     left: 15px; }
 
-  /* line 120, src/_summer.scss */
+  /* line 115, src/_summer.scss */
   15% {
     bottom: 150px;
     left: 40px; }
 
-  /* line 124, src/_summer.scss */
+  /* line 119, src/_summer.scss */
   20% {
     bottom: 130px;
     left: 60px; }
 
-  /* line 128, src/_summer.scss */
+  /* line 123, src/_summer.scss */
   25% {
     bottom: 250px;
     left: 80px; }
 
-  /* line 132, src/_summer.scss */
+  /* line 127, src/_summer.scss */
   30% {
     bottom: 200px;
     left: 90px; }
 
-  /* line 136, src/_summer.scss */
+  /* line 131, src/_summer.scss */
   35% {
     bottom: 350px;
     left: 120px; }
 
-  /* line 140, src/_summer.scss */
+  /* line 135, src/_summer.scss */
   40% {
     bottom: 300px;
     left: 160px; }
 
-  /* line 145, src/_summer.scss */
+  /* line 140, src/_summer.scss */
   45% {
     bottom: 430px;
     left: 230px;
@@ -463,7 +463,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 152, src/_summer.scss */
+  /* line 147, src/_summer.scss */
   50% {
     bottom: 430px;
     left: 250px;
@@ -471,7 +471,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
 
-  /* line 160, src/_summer.scss */
+  /* line 155, src/_summer.scss */
   60% {
     -webkit-transform: rotate(170deg);
     transform: rotate(170deg);
@@ -479,7 +479,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 270px;
     opacity: 1; }
 
-  /* line 167, src/_summer.scss */
+  /* line 162, src/_summer.scss */
   65% {
     -webkit-transform: rotate(170deg);
     transform: rotate(170deg);
@@ -487,7 +487,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 270px;
     opacity: 1; }
 
-  /* line 174, src/_summer.scss */
+  /* line 169, src/_summer.scss */
   70% {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
@@ -495,7 +495,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 270px;
     opacity: 1; }
 
-  /* line 182, src/_summer.scss */
+  /* line 177, src/_summer.scss */
   100% {
     -webkit-transform: rotate(170deg);
     transform: rotate(170deg);
@@ -504,53 +504,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     opacity: 0; } }
 
 @-o-keyframes letterM {
-  /* line 107, src/_summer.scss */
+  /* line 102, src/_summer.scss */
   0% {
     opacity: 1;
     bottom: 0;
     left: 0; }
 
-  /* line 112, src/_summer.scss */
+  /* line 107, src/_summer.scss */
   5% {
     bottom: 80px;
     left: 10px; }
 
-  /* line 116, src/_summer.scss */
+  /* line 111, src/_summer.scss */
   10% {
     bottom: 60px;
     left: 15px; }
 
-  /* line 120, src/_summer.scss */
+  /* line 115, src/_summer.scss */
   15% {
     bottom: 150px;
     left: 40px; }
 
-  /* line 124, src/_summer.scss */
+  /* line 119, src/_summer.scss */
   20% {
     bottom: 130px;
     left: 60px; }
 
-  /* line 128, src/_summer.scss */
+  /* line 123, src/_summer.scss */
   25% {
     bottom: 250px;
     left: 80px; }
 
-  /* line 132, src/_summer.scss */
+  /* line 127, src/_summer.scss */
   30% {
     bottom: 200px;
     left: 90px; }
 
-  /* line 136, src/_summer.scss */
+  /* line 131, src/_summer.scss */
   35% {
     bottom: 350px;
     left: 120px; }
 
-  /* line 140, src/_summer.scss */
+  /* line 135, src/_summer.scss */
   40% {
     bottom: 300px;
     left: 160px; }
 
-  /* line 145, src/_summer.scss */
+  /* line 140, src/_summer.scss */
   45% {
     bottom: 430px;
     left: 230px;
@@ -558,7 +558,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 152, src/_summer.scss */
+  /* line 147, src/_summer.scss */
   50% {
     bottom: 430px;
     left: 250px;
@@ -566,7 +566,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transform: rotate(45deg);
     transform: rotate(45deg); }
 
-  /* line 160, src/_summer.scss */
+  /* line 155, src/_summer.scss */
   60% {
     -o-transform: rotate(170deg);
     transform: rotate(170deg);
@@ -574,7 +574,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 270px;
     opacity: 1; }
 
-  /* line 167, src/_summer.scss */
+  /* line 162, src/_summer.scss */
   65% {
     -o-transform: rotate(170deg);
     transform: rotate(170deg);
@@ -582,7 +582,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 270px;
     opacity: 1; }
 
-  /* line 174, src/_summer.scss */
+  /* line 169, src/_summer.scss */
   70% {
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
@@ -590,7 +590,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 270px;
     opacity: 1; }
 
-  /* line 182, src/_summer.scss */
+  /* line 177, src/_summer.scss */
   100% {
     -o-transform: rotate(170deg);
     transform: rotate(170deg);
@@ -599,53 +599,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     opacity: 0; } }
 
 @-ms-keyframes letterM {
-  /* line 107, src/_summer.scss */
+  /* line 102, src/_summer.scss */
   0% {
     opacity: 1;
     bottom: 0;
     left: 0; }
 
-  /* line 112, src/_summer.scss */
+  /* line 107, src/_summer.scss */
   5% {
     bottom: 80px;
     left: 10px; }
 
-  /* line 116, src/_summer.scss */
+  /* line 111, src/_summer.scss */
   10% {
     bottom: 60px;
     left: 15px; }
 
-  /* line 120, src/_summer.scss */
+  /* line 115, src/_summer.scss */
   15% {
     bottom: 150px;
     left: 40px; }
 
-  /* line 124, src/_summer.scss */
+  /* line 119, src/_summer.scss */
   20% {
     bottom: 130px;
     left: 60px; }
 
-  /* line 128, src/_summer.scss */
+  /* line 123, src/_summer.scss */
   25% {
     bottom: 250px;
     left: 80px; }
 
-  /* line 132, src/_summer.scss */
+  /* line 127, src/_summer.scss */
   30% {
     bottom: 200px;
     left: 90px; }
 
-  /* line 136, src/_summer.scss */
+  /* line 131, src/_summer.scss */
   35% {
     bottom: 350px;
     left: 120px; }
 
-  /* line 140, src/_summer.scss */
+  /* line 135, src/_summer.scss */
   40% {
     bottom: 300px;
     left: 160px; }
 
-  /* line 145, src/_summer.scss */
+  /* line 140, src/_summer.scss */
   45% {
     bottom: 430px;
     left: 230px;
@@ -653,7 +653,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -ms-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 152, src/_summer.scss */
+  /* line 147, src/_summer.scss */
   50% {
     bottom: 430px;
     left: 250px;
@@ -661,7 +661,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
 
-  /* line 160, src/_summer.scss */
+  /* line 155, src/_summer.scss */
   60% {
     -ms-transform: rotate(170deg);
     transform: rotate(170deg);
@@ -669,7 +669,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 270px;
     opacity: 1; }
 
-  /* line 167, src/_summer.scss */
+  /* line 162, src/_summer.scss */
   65% {
     -ms-transform: rotate(170deg);
     transform: rotate(170deg);
@@ -677,7 +677,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 270px;
     opacity: 1; }
 
-  /* line 174, src/_summer.scss */
+  /* line 169, src/_summer.scss */
   70% {
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
@@ -685,7 +685,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 270px;
     opacity: 1; }
 
-  /* line 182, src/_summer.scss */
+  /* line 177, src/_summer.scss */
   100% {
     -ms-transform: rotate(170deg);
     transform: rotate(170deg);
@@ -694,95 +694,95 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     opacity: 0; } }
 
 @keyframes letterM {
-  /* line 107, src/_summer.scss */
+  /* line 102, src/_summer.scss */
   0% {
     opacity: 1;
     bottom: 0;
     left: 0; }
 
-  /* line 112, src/_summer.scss */
+  /* line 107, src/_summer.scss */
   5% {
     bottom: 80px;
     left: 10px; }
 
-  /* line 116, src/_summer.scss */
+  /* line 111, src/_summer.scss */
   10% {
     bottom: 60px;
     left: 15px; }
 
-  /* line 120, src/_summer.scss */
+  /* line 115, src/_summer.scss */
   15% {
     bottom: 150px;
     left: 40px; }
 
-  /* line 124, src/_summer.scss */
+  /* line 119, src/_summer.scss */
   20% {
     bottom: 130px;
     left: 60px; }
 
-  /* line 128, src/_summer.scss */
+  /* line 123, src/_summer.scss */
   25% {
     bottom: 250px;
     left: 80px; }
 
-  /* line 132, src/_summer.scss */
+  /* line 127, src/_summer.scss */
   30% {
     bottom: 200px;
     left: 90px; }
 
-  /* line 136, src/_summer.scss */
+  /* line 131, src/_summer.scss */
   35% {
     bottom: 350px;
     left: 120px; }
 
-  /* line 140, src/_summer.scss */
+  /* line 135, src/_summer.scss */
   40% {
     bottom: 300px;
     left: 160px; }
 
-  /* line 145, src/_summer.scss */
+  /* line 140, src/_summer.scss */
   45% {
     bottom: 430px;
     left: 230px;
     opacity: 1;
     transform: rotate(0deg); }
 
-  /* line 152, src/_summer.scss */
+  /* line 147, src/_summer.scss */
   50% {
     bottom: 430px;
     left: 250px;
     opacity: 1;
     transform: rotate(45deg); }
 
-  /* line 160, src/_summer.scss */
+  /* line 155, src/_summer.scss */
   60% {
     transform: rotate(170deg);
     bottom: 420px;
     left: 270px;
     opacity: 1; }
 
-  /* line 167, src/_summer.scss */
+  /* line 162, src/_summer.scss */
   65% {
     transform: rotate(170deg);
     bottom: 400px;
     left: 270px;
     opacity: 1; }
 
-  /* line 174, src/_summer.scss */
+  /* line 169, src/_summer.scss */
   70% {
     transform: rotate(180deg);
     bottom: 400px;
     left: 270px;
     opacity: 1; }
 
-  /* line 182, src/_summer.scss */
+  /* line 177, src/_summer.scss */
   100% {
     transform: rotate(170deg);
     bottom: 0px;
     left: 270px;
     opacity: 0; } }
 
-/* line 193, src/_summer.scss */
+/* line 188, src/_summer.scss */
 #C {
   position: absolute;
   bottom: 0;
@@ -828,77 +828,77 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -ms-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
-  /* line 207, src/_summer.scss */
+  /* line 202, src/_summer.scss */
   #C.letter {
     font-size: 100px;
     color: red;
-    text-shadow: 2px 2px 3px black; }
+    text-shadow: 2px 2px 3px #0054a6; }
 
 @-moz-keyframes letterC {
-  /* line 215, src/_summer.scss */
+  /* line 210, src/_summer.scss */
   0% {
     opacity: 1;
     bottom: 0;
     left: 0; }
 
-  /* line 220, src/_summer.scss */
+  /* line 215, src/_summer.scss */
   5% {
     bottom: 80px;
     left: 10px; }
 
-  /* line 224, src/_summer.scss */
+  /* line 219, src/_summer.scss */
   10% {
     bottom: 60px;
     left: 15px; }
 
-  /* line 228, src/_summer.scss */
+  /* line 223, src/_summer.scss */
   15% {
     bottom: 150px;
     left: 40px; }
 
-  /* line 232, src/_summer.scss */
+  /* line 227, src/_summer.scss */
   20% {
     bottom: 130px;
     left: 60px; }
 
-  /* line 236, src/_summer.scss */
+  /* line 231, src/_summer.scss */
   25% {
     bottom: 250px;
     left: 80px; }
 
-  /* line 240, src/_summer.scss */
+  /* line 235, src/_summer.scss */
   30% {
     bottom: 200px;
     left: 90px; }
 
-  /* line 244, src/_summer.scss */
+  /* line 239, src/_summer.scss */
   35% {
     bottom: 350px;
     left: 120px; }
 
-  /* line 248, src/_summer.scss */
+  /* line 243, src/_summer.scss */
   40% {
     bottom: 300px;
     left: 160px; }
 
-  /* line 253, src/_summer.scss */
+  /* line 248, src/_summer.scss */
   45% {
     bottom: 430px;
     left: 230px;
     opacity: 1; }
 
-  /* line 259, src/_summer.scss */
+  /* line 254, src/_summer.scss */
   50% {
     bottom: 460px;
-    left: 280px;
+    left: 320px;
     opacity: 1;
     -moz-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); }
 
-  /* line 267, src/_summer.scss */
+  /* line 262, src/_summer.scss */
   60% {
     bottom: 420px;
-    left: 270px;
+    left: 320px;
     opacity: 1;
     -moz-transform: scale3d(2, 2, 5);
     transform: scale3d(2, 2, 5);
@@ -908,91 +908,93 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     transform: rotateY(180deg);
     /*@include scale3d(1,1,1);*/ }
 
-  /* line 277, src/_summer.scss */
+  /* line 272, src/_summer.scss */
   65% {
     bottom: 400px;
-    left: 270px;
+    left: 320px;
     opacity: 1; }
 
-  /* line 284, src/_summer.scss */
+  /* line 279, src/_summer.scss */
   70% {
     bottom: 350px;
-    left: 270px;
+    left: 320px;
     opacity: 1;
     -moz-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); }
 
-  /* line 293, src/_summer.scss */
+  /* line 288, src/_summer.scss */
   100% {
+    -moz-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75);
     bottom: 0px;
-    left: 270px;
+    left: 320px;
     opacity: 0; } }
 
 @-webkit-keyframes letterC {
-  /* line 215, src/_summer.scss */
+  /* line 210, src/_summer.scss */
   0% {
     opacity: 1;
     bottom: 0;
     left: 0; }
 
-  /* line 220, src/_summer.scss */
+  /* line 215, src/_summer.scss */
   5% {
     bottom: 80px;
     left: 10px; }
 
-  /* line 224, src/_summer.scss */
+  /* line 219, src/_summer.scss */
   10% {
     bottom: 60px;
     left: 15px; }
 
-  /* line 228, src/_summer.scss */
+  /* line 223, src/_summer.scss */
   15% {
     bottom: 150px;
     left: 40px; }
 
-  /* line 232, src/_summer.scss */
+  /* line 227, src/_summer.scss */
   20% {
     bottom: 130px;
     left: 60px; }
 
-  /* line 236, src/_summer.scss */
+  /* line 231, src/_summer.scss */
   25% {
     bottom: 250px;
     left: 80px; }
 
-  /* line 240, src/_summer.scss */
+  /* line 235, src/_summer.scss */
   30% {
     bottom: 200px;
     left: 90px; }
 
-  /* line 244, src/_summer.scss */
+  /* line 239, src/_summer.scss */
   35% {
     bottom: 350px;
     left: 120px; }
 
-  /* line 248, src/_summer.scss */
+  /* line 243, src/_summer.scss */
   40% {
     bottom: 300px;
     left: 160px; }
 
-  /* line 253, src/_summer.scss */
+  /* line 248, src/_summer.scss */
   45% {
     bottom: 430px;
     left: 230px;
     opacity: 1; }
 
-  /* line 259, src/_summer.scss */
+  /* line 254, src/_summer.scss */
   50% {
     bottom: 460px;
-    left: 280px;
+    left: 320px;
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); }
 
-  /* line 267, src/_summer.scss */
+  /* line 262, src/_summer.scss */
   60% {
     bottom: 420px;
-    left: 270px;
+    left: 320px;
     opacity: 1;
     -webkit-transform: scale3d(2, 2, 5);
     transform: scale3d(2, 2, 5);
@@ -1002,91 +1004,93 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     transform: rotateY(180deg);
     /*@include scale3d(1,1,1);*/ }
 
-  /* line 277, src/_summer.scss */
+  /* line 272, src/_summer.scss */
   65% {
     bottom: 400px;
-    left: 270px;
+    left: 320px;
     opacity: 1; }
 
-  /* line 284, src/_summer.scss */
+  /* line 279, src/_summer.scss */
   70% {
     bottom: 350px;
-    left: 270px;
+    left: 320px;
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); }
 
-  /* line 293, src/_summer.scss */
+  /* line 288, src/_summer.scss */
   100% {
+    -webkit-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75);
     bottom: 0px;
-    left: 270px;
+    left: 320px;
     opacity: 0; } }
 
 @-o-keyframes letterC {
-  /* line 215, src/_summer.scss */
+  /* line 210, src/_summer.scss */
   0% {
     opacity: 1;
     bottom: 0;
     left: 0; }
 
-  /* line 220, src/_summer.scss */
+  /* line 215, src/_summer.scss */
   5% {
     bottom: 80px;
     left: 10px; }
 
-  /* line 224, src/_summer.scss */
+  /* line 219, src/_summer.scss */
   10% {
     bottom: 60px;
     left: 15px; }
 
-  /* line 228, src/_summer.scss */
+  /* line 223, src/_summer.scss */
   15% {
     bottom: 150px;
     left: 40px; }
 
-  /* line 232, src/_summer.scss */
+  /* line 227, src/_summer.scss */
   20% {
     bottom: 130px;
     left: 60px; }
 
-  /* line 236, src/_summer.scss */
+  /* line 231, src/_summer.scss */
   25% {
     bottom: 250px;
     left: 80px; }
 
-  /* line 240, src/_summer.scss */
+  /* line 235, src/_summer.scss */
   30% {
     bottom: 200px;
     left: 90px; }
 
-  /* line 244, src/_summer.scss */
+  /* line 239, src/_summer.scss */
   35% {
     bottom: 350px;
     left: 120px; }
 
-  /* line 248, src/_summer.scss */
+  /* line 243, src/_summer.scss */
   40% {
     bottom: 300px;
     left: 160px; }
 
-  /* line 253, src/_summer.scss */
+  /* line 248, src/_summer.scss */
   45% {
     bottom: 430px;
     left: 230px;
     opacity: 1; }
 
-  /* line 259, src/_summer.scss */
+  /* line 254, src/_summer.scss */
   50% {
     bottom: 460px;
-    left: 280px;
+    left: 320px;
     opacity: 1;
     -o-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); }
 
-  /* line 267, src/_summer.scss */
+  /* line 262, src/_summer.scss */
   60% {
     bottom: 420px;
-    left: 270px;
+    left: 320px;
     opacity: 1;
     -o-transform: scale3d(2, 2, 5);
     transform: scale3d(2, 2, 5);
@@ -1096,91 +1100,93 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     transform: rotateY(180deg);
     /*@include scale3d(1,1,1);*/ }
 
-  /* line 277, src/_summer.scss */
+  /* line 272, src/_summer.scss */
   65% {
     bottom: 400px;
-    left: 270px;
+    left: 320px;
     opacity: 1; }
 
-  /* line 284, src/_summer.scss */
+  /* line 279, src/_summer.scss */
   70% {
     bottom: 350px;
-    left: 270px;
+    left: 320px;
     opacity: 1;
     -o-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); }
 
-  /* line 293, src/_summer.scss */
+  /* line 288, src/_summer.scss */
   100% {
+    -o-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75);
     bottom: 0px;
-    left: 270px;
+    left: 320px;
     opacity: 0; } }
 
 @-ms-keyframes letterC {
-  /* line 215, src/_summer.scss */
+  /* line 210, src/_summer.scss */
   0% {
     opacity: 1;
     bottom: 0;
     left: 0; }
 
-  /* line 220, src/_summer.scss */
+  /* line 215, src/_summer.scss */
   5% {
     bottom: 80px;
     left: 10px; }
 
-  /* line 224, src/_summer.scss */
+  /* line 219, src/_summer.scss */
   10% {
     bottom: 60px;
     left: 15px; }
 
-  /* line 228, src/_summer.scss */
+  /* line 223, src/_summer.scss */
   15% {
     bottom: 150px;
     left: 40px; }
 
-  /* line 232, src/_summer.scss */
+  /* line 227, src/_summer.scss */
   20% {
     bottom: 130px;
     left: 60px; }
 
-  /* line 236, src/_summer.scss */
+  /* line 231, src/_summer.scss */
   25% {
     bottom: 250px;
     left: 80px; }
 
-  /* line 240, src/_summer.scss */
+  /* line 235, src/_summer.scss */
   30% {
     bottom: 200px;
     left: 90px; }
 
-  /* line 244, src/_summer.scss */
+  /* line 239, src/_summer.scss */
   35% {
     bottom: 350px;
     left: 120px; }
 
-  /* line 248, src/_summer.scss */
+  /* line 243, src/_summer.scss */
   40% {
     bottom: 300px;
     left: 160px; }
 
-  /* line 253, src/_summer.scss */
+  /* line 248, src/_summer.scss */
   45% {
     bottom: 430px;
     left: 230px;
     opacity: 1; }
 
-  /* line 259, src/_summer.scss */
+  /* line 254, src/_summer.scss */
   50% {
     bottom: 460px;
-    left: 280px;
+    left: 320px;
     opacity: 1;
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); }
 
-  /* line 267, src/_summer.scss */
+  /* line 262, src/_summer.scss */
   60% {
     bottom: 420px;
-    left: 270px;
+    left: 320px;
     opacity: 1;
     -ms-transform: scale3d(2, 2, 5);
     transform: scale3d(2, 2, 5);
@@ -1190,111 +1196,988 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     transform: rotateY(180deg);
     /*@include scale3d(1,1,1);*/ }
 
-  /* line 277, src/_summer.scss */
+  /* line 272, src/_summer.scss */
   65% {
     bottom: 400px;
-    left: 270px;
+    left: 320px;
     opacity: 1; }
 
-  /* line 284, src/_summer.scss */
+  /* line 279, src/_summer.scss */
   70% {
     bottom: 350px;
-    left: 270px;
+    left: 320px;
     opacity: 1;
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); }
 
-  /* line 293, src/_summer.scss */
+  /* line 288, src/_summer.scss */
   100% {
+    -ms-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75);
     bottom: 0px;
-    left: 270px;
+    left: 320px;
     opacity: 0; } }
 
 @keyframes letterC {
-  /* line 215, src/_summer.scss */
+  /* line 210, src/_summer.scss */
   0% {
     opacity: 1;
     bottom: 0;
     left: 0; }
 
-  /* line 220, src/_summer.scss */
+  /* line 215, src/_summer.scss */
   5% {
     bottom: 80px;
     left: 10px; }
 
-  /* line 224, src/_summer.scss */
+  /* line 219, src/_summer.scss */
   10% {
     bottom: 60px;
     left: 15px; }
 
-  /* line 228, src/_summer.scss */
+  /* line 223, src/_summer.scss */
   15% {
     bottom: 150px;
     left: 40px; }
 
-  /* line 232, src/_summer.scss */
+  /* line 227, src/_summer.scss */
   20% {
     bottom: 130px;
     left: 60px; }
 
-  /* line 236, src/_summer.scss */
+  /* line 231, src/_summer.scss */
   25% {
     bottom: 250px;
     left: 80px; }
 
-  /* line 240, src/_summer.scss */
+  /* line 235, src/_summer.scss */
   30% {
     bottom: 200px;
     left: 90px; }
 
-  /* line 244, src/_summer.scss */
+  /* line 239, src/_summer.scss */
   35% {
     bottom: 350px;
     left: 120px; }
 
-  /* line 248, src/_summer.scss */
+  /* line 243, src/_summer.scss */
   40% {
     bottom: 300px;
     left: 160px; }
 
-  /* line 253, src/_summer.scss */
+  /* line 248, src/_summer.scss */
   45% {
     bottom: 430px;
     left: 230px;
     opacity: 1; }
 
-  /* line 259, src/_summer.scss */
+  /* line 254, src/_summer.scss */
   50% {
     bottom: 460px;
-    left: 280px;
+    left: 320px;
     opacity: 1;
     transform: scale3d(1, 1, 1); }
 
-  /* line 267, src/_summer.scss */
+  /* line 262, src/_summer.scss */
   60% {
     bottom: 420px;
-    left: 270px;
+    left: 320px;
     opacity: 1;
     transform: scale3d(2, 2, 5);
     transform: rotateX(180deg);
     transform: rotateY(180deg);
     /*@include scale3d(1,1,1);*/ }
 
-  /* line 277, src/_summer.scss */
+  /* line 272, src/_summer.scss */
   65% {
     bottom: 400px;
-    left: 270px;
+    left: 320px;
     opacity: 1; }
 
-  /* line 284, src/_summer.scss */
+  /* line 279, src/_summer.scss */
   70% {
     bottom: 350px;
-    left: 270px;
+    left: 320px;
     opacity: 1;
     transform: scale3d(1, 1, 1); }
 
-  /* line 293, src/_summer.scss */
+  /* line 288, src/_summer.scss */
+  100% {
+    transform: scale(0.75, 0.75);
+    bottom: 0px;
+    left: 320px;
+    opacity: 0; } }
+
+/* line 300, src/_summer.scss */
+#D {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-animation-name: letterD;
+  -moz-animation-name: letterD;
+  -ms-animation-name: letterD;
+  -o-animation-name: letterD;
+  animation-name: letterD;
+  -webkit-animation-duration: 8s;
+  -moz-animation-duration: 8s;
+  -ms-animation-duration: 8s;
+  -o-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-delay: 10s;
+  -moz-animation-delay: 10s;
+  -ms-animation-delay: 10s;
+  -o-animation-delay: 10s;
+  animation-delay: 10s;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+  /* line 314, src/_summer.scss */
+  #D.letter {
+    font-size: 25px;
+    color: #fff200;
+    text-shadow: 2px 2px 3px #d37c3c; }
+
+@-moz-keyframes letterD {
+  /* line 322, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 327, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 331, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 335, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 339, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 343, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 347, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 351, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 355, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 360, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1; }
+
+  /* line 366, src/_summer.scss */
+  50% {
+    bottom: 460px;
+    left: 320px;
+    opacity: 1;
+    -moz-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2); }
+
+  /* line 374, src/_summer.scss */
+  60% {
+    bottom: 420px;
+    left: 320px;
+    opacity: 1;
+    -moz-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    -moz-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    /*@include scale3d(1,1,1);*/ }
+
+  /* line 383, src/_summer.scss */
+  65% {
+    -moz-transform: scale3d(5, 5, 5);
+    transform: scale3d(5, 5, 5);
+    bottom: 400px;
+    left: 320px;
+    opacity: 1; }
+
+  /* line 390, src/_summer.scss */
+  70% {
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+    bottom: 350px;
+    left: 320px;
+    opacity: 1;
+    -moz-transform: scale3d(0.25, 0.25, 0.25);
+    transform: scale3d(0.25, 0.25, 0.25); }
+
+  /* line 398, src/_summer.scss */
+  80% {
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    bottom: 200px;
+    left: 320px;
+    opacity: 1;
+    -moz-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2); }
+
+  /* line 407, src/_summer.scss */
   100% {
     bottom: 0px;
-    left: 270px;
+    left: 320px;
+    opacity: 0;
+    -moz-transform: scale3d(3, 3, 3);
+    transform: scale3d(3, 3, 3); } }
+
+@-webkit-keyframes letterD {
+  /* line 322, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 327, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 331, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 335, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 339, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 343, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 347, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 351, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 355, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 360, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1; }
+
+  /* line 366, src/_summer.scss */
+  50% {
+    bottom: 460px;
+    left: 320px;
+    opacity: 1;
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2); }
+
+  /* line 374, src/_summer.scss */
+  60% {
+    bottom: 420px;
+    left: 320px;
+    opacity: 1;
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    /*@include scale3d(1,1,1);*/ }
+
+  /* line 383, src/_summer.scss */
+  65% {
+    -webkit-transform: scale3d(5, 5, 5);
+    transform: scale3d(5, 5, 5);
+    bottom: 400px;
+    left: 320px;
+    opacity: 1; }
+
+  /* line 390, src/_summer.scss */
+  70% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    bottom: 350px;
+    left: 320px;
+    opacity: 1;
+    -webkit-transform: scale3d(0.25, 0.25, 0.25);
+    transform: scale3d(0.25, 0.25, 0.25); }
+
+  /* line 398, src/_summer.scss */
+  80% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    bottom: 200px;
+    left: 320px;
+    opacity: 1;
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2); }
+
+  /* line 407, src/_summer.scss */
+  100% {
+    bottom: 0px;
+    left: 320px;
+    opacity: 0;
+    -webkit-transform: scale3d(3, 3, 3);
+    transform: scale3d(3, 3, 3); } }
+
+@-o-keyframes letterD {
+  /* line 322, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 327, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 331, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 335, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 339, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 343, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 347, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 351, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 355, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 360, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1; }
+
+  /* line 366, src/_summer.scss */
+  50% {
+    bottom: 460px;
+    left: 320px;
+    opacity: 1;
+    -o-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2); }
+
+  /* line 374, src/_summer.scss */
+  60% {
+    bottom: 420px;
+    left: 320px;
+    opacity: 1;
+    -o-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    /*@include scale3d(1,1,1);*/ }
+
+  /* line 383, src/_summer.scss */
+  65% {
+    -o-transform: scale3d(5, 5, 5);
+    transform: scale3d(5, 5, 5);
+    bottom: 400px;
+    left: 320px;
+    opacity: 1; }
+
+  /* line 390, src/_summer.scss */
+  70% {
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    bottom: 350px;
+    left: 320px;
+    opacity: 1;
+    -o-transform: scale3d(0.25, 0.25, 0.25);
+    transform: scale3d(0.25, 0.25, 0.25); }
+
+  /* line 398, src/_summer.scss */
+  80% {
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    bottom: 200px;
+    left: 320px;
+    opacity: 1;
+    -o-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2); }
+
+  /* line 407, src/_summer.scss */
+  100% {
+    bottom: 0px;
+    left: 320px;
+    opacity: 0;
+    -o-transform: scale3d(3, 3, 3);
+    transform: scale3d(3, 3, 3); } }
+
+@-ms-keyframes letterD {
+  /* line 322, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 327, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 331, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 335, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 339, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 343, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 347, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 351, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 355, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 360, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1; }
+
+  /* line 366, src/_summer.scss */
+  50% {
+    bottom: 460px;
+    left: 320px;
+    opacity: 1;
+    -ms-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2); }
+
+  /* line 374, src/_summer.scss */
+  60% {
+    bottom: 420px;
+    left: 320px;
+    opacity: 1;
+    -ms-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    /*@include scale3d(1,1,1);*/ }
+
+  /* line 383, src/_summer.scss */
+  65% {
+    -ms-transform: scale3d(5, 5, 5);
+    transform: scale3d(5, 5, 5);
+    bottom: 400px;
+    left: 320px;
+    opacity: 1; }
+
+  /* line 390, src/_summer.scss */
+  70% {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    bottom: 350px;
+    left: 320px;
+    opacity: 1;
+    -ms-transform: scale3d(0.25, 0.25, 0.25);
+    transform: scale3d(0.25, 0.25, 0.25); }
+
+  /* line 398, src/_summer.scss */
+  80% {
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    bottom: 200px;
+    left: 320px;
+    opacity: 1;
+    -ms-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2); }
+
+  /* line 407, src/_summer.scss */
+  100% {
+    bottom: 0px;
+    left: 320px;
+    opacity: 0;
+    -ms-transform: scale3d(3, 3, 3);
+    transform: scale3d(3, 3, 3); } }
+
+@keyframes letterD {
+  /* line 322, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 327, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 331, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 335, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 339, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 343, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 347, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 351, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 355, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 360, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1; }
+
+  /* line 366, src/_summer.scss */
+  50% {
+    bottom: 460px;
+    left: 320px;
+    opacity: 1;
+    transform: scale3d(2, 2, 2); }
+
+  /* line 374, src/_summer.scss */
+  60% {
+    bottom: 420px;
+    left: 320px;
+    opacity: 1;
+    transform: rotateX(-180deg);
+    transform: rotateY(-180deg);
+    /*@include scale3d(1,1,1);*/ }
+
+  /* line 383, src/_summer.scss */
+  65% {
+    transform: scale3d(5, 5, 5);
+    bottom: 400px;
+    left: 320px;
+    opacity: 1; }
+
+  /* line 390, src/_summer.scss */
+  70% {
+    transform: rotate(180deg);
+    bottom: 350px;
+    left: 320px;
+    opacity: 1;
+    transform: scale3d(0.25, 0.25, 0.25); }
+
+  /* line 398, src/_summer.scss */
+  80% {
+    transform: rotateY(180deg);
+    bottom: 200px;
+    left: 320px;
+    opacity: 1;
+    transform: scale3d(2, 2, 2); }
+
+  /* line 407, src/_summer.scss */
+  100% {
+    bottom: 0px;
+    left: 320px;
+    opacity: 0;
+    transform: scale3d(3, 3, 3); } }
+
+/* line 418, src/_summer.scss */
+#splashgroup {
+  position: absolute;
+  bottom: 6px;
+  left: 200px;
+  width: 100px;
+  height: 100px; }
+  /* line 426, src/_summer.scss */
+  #splashgroup div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: blue;
+    opacity: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+    -ms-animation-direction: normal;
+    -o-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+    -ms-animation-delay: 0;
+    -o-animation-delay: 0;
+    animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -ms-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  /* line 444, src/_summer.scss */
+  #splashgroup #splash1 {
+    -webkit-animation-name: splash1;
+    -moz-animation-name: splash1;
+    -ms-animation-name: splash1;
+    -o-animation-name: splash1;
+    animation-name: splash1; }
+  /* line 447, src/_summer.scss */
+  #splashgroup #splash2 {
+    -webkit-animation-name: splash2;
+    -moz-animation-name: splash2;
+    -ms-animation-name: splash2;
+    -o-animation-name: splash2;
+    animation-name: splash2; }
+
+@-moz-keyframes splash1 {
+  /* line 455, src/_summer.scss */
+  30% {
+    left: -75px;
+    top: -100px;
+    opacity: 1; }
+
+  /* line 461, src/_summer.scss */
+  60% {
+    left: -125px;
+    top: -130px;
+    opacity: 1; }
+
+  /* line 466, src/_summer.scss */
+  100% {
+    left: -170px;
+    top: 0px;
     opacity: 0; } }
+
+@-webkit-keyframes splash1 {
+  /* line 455, src/_summer.scss */
+  30% {
+    left: -75px;
+    top: -100px;
+    opacity: 1; }
+
+  /* line 461, src/_summer.scss */
+  60% {
+    left: -125px;
+    top: -130px;
+    opacity: 1; }
+
+  /* line 466, src/_summer.scss */
+  100% {
+    left: -170px;
+    top: 0px;
+    opacity: 0; } }
+
+@-o-keyframes splash1 {
+  /* line 455, src/_summer.scss */
+  30% {
+    left: -75px;
+    top: -100px;
+    opacity: 1; }
+
+  /* line 461, src/_summer.scss */
+  60% {
+    left: -125px;
+    top: -130px;
+    opacity: 1; }
+
+  /* line 466, src/_summer.scss */
+  100% {
+    left: -170px;
+    top: 0px;
+    opacity: 0; } }
+
+@-ms-keyframes splash1 {
+  /* line 455, src/_summer.scss */
+  30% {
+    left: -75px;
+    top: -100px;
+    opacity: 1; }
+
+  /* line 461, src/_summer.scss */
+  60% {
+    left: -125px;
+    top: -130px;
+    opacity: 1; }
+
+  /* line 466, src/_summer.scss */
+  100% {
+    left: -170px;
+    top: 0px;
+    opacity: 0; } }
+
+@keyframes splash1 {
+  /* line 455, src/_summer.scss */
+  30% {
+    left: -75px;
+    top: -100px;
+    opacity: 1; }
+
+  /* line 461, src/_summer.scss */
+  60% {
+    left: -125px;
+    top: -130px;
+    opacity: 1; }
+
+  /* line 466, src/_summer.scss */
+  100% {
+    left: -170px;
+    top: 0px;
+    opacity: 0; } }
+
+@-moz-keyframes splash2 {
+  /* line 474, src/_summer.scss */
+  0% {
+    left: 200px;
+    top: -100px;
+    opacity: 1; }
+
+  /* line 479, src/_summer.scss */
+  30% {
+    left: 150px;
+    top: -280px;
+    opacity: 1; }
+
+  /* line 485, src/_summer.scss */
+  60% {
+    left: 100px;
+    top: -130px;
+    opacity: 1; }
+
+  /* line 490, src/_summer.scss */
+  100% {
+    left: 90px;
+    top: 0px;
+    opacity: 1; } }
+
+@-webkit-keyframes splash2 {
+  /* line 474, src/_summer.scss */
+  0% {
+    left: 200px;
+    top: -100px;
+    opacity: 1; }
+
+  /* line 479, src/_summer.scss */
+  30% {
+    left: 150px;
+    top: -280px;
+    opacity: 1; }
+
+  /* line 485, src/_summer.scss */
+  60% {
+    left: 100px;
+    top: -130px;
+    opacity: 1; }
+
+  /* line 490, src/_summer.scss */
+  100% {
+    left: 90px;
+    top: 0px;
+    opacity: 1; } }
+
+@-o-keyframes splash2 {
+  /* line 474, src/_summer.scss */
+  0% {
+    left: 200px;
+    top: -100px;
+    opacity: 1; }
+
+  /* line 479, src/_summer.scss */
+  30% {
+    left: 150px;
+    top: -280px;
+    opacity: 1; }
+
+  /* line 485, src/_summer.scss */
+  60% {
+    left: 100px;
+    top: -130px;
+    opacity: 1; }
+
+  /* line 490, src/_summer.scss */
+  100% {
+    left: 90px;
+    top: 0px;
+    opacity: 1; } }
+
+@-ms-keyframes splash2 {
+  /* line 474, src/_summer.scss */
+  0% {
+    left: 200px;
+    top: -100px;
+    opacity: 1; }
+
+  /* line 479, src/_summer.scss */
+  30% {
+    left: 150px;
+    top: -280px;
+    opacity: 1; }
+
+  /* line 485, src/_summer.scss */
+  60% {
+    left: 100px;
+    top: -130px;
+    opacity: 1; }
+
+  /* line 490, src/_summer.scss */
+  100% {
+    left: 90px;
+    top: 0px;
+    opacity: 1; } }
+
+@keyframes splash2 {
+  /* line 474, src/_summer.scss */
+  0% {
+    left: 200px;
+    top: -100px;
+    opacity: 1; }
+
+  /* line 479, src/_summer.scss */
+  30% {
+    left: 150px;
+    top: -280px;
+    opacity: 1; }
+
+  /* line 485, src/_summer.scss */
+  60% {
+    left: 100px;
+    top: -130px;
+    opacity: 1; }
+
+  /* line 490, src/_summer.scss */
+  100% {
+    left: 90px;
+    top: 0px;
+    opacity: 1; } }
