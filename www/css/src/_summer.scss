@@ -1,0 +1,309 @@
+body {
+
+}
+
+#main {
+  width: 900px;
+  margin: 10px auto;
+  min-height: 600px;
+  @include perspective(800);
+  @include perspective-origin(75% 25%);
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+
+
+
+
+
+}
+
+.letter {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 50px;
+  @include text-shadow(2px 2px 3px #000);
+}
+
+#pool {
+  height: 361px;
+  width: 430px;
+  background: url(/images/pool.png) 0 0 no-repeat;
+  position: absolute;
+  left: 210px;
+  bottom: 0;
+  z-index: 100;
+  /*@include scale3d(.25,.25, .25);
+  @include animation-name(pool);
+  @include animation-duration(3s);
+  @include animation-timing-function(easein);
+  @include animation-direction(normal);
+  @include animation-iteration-count(1);
+  @include animation-delay(0);
+  @include animation-play-state(running);
+  @include animation-fill-mode(forwards);
+  opacity: .75;*/
+}
+
+@include keyframes(pool) {
+  100% {
+     @include scale3d(1,1,1);
+     opacity: 1;
+  }
+}
+
+#ladder {
+  height: 500px;
+  width: 95px;
+  position: absolute;
+  bottom: -500px;
+  left: 100px;
+  background: url(/images/ladder.png) 0 0 no-repeat;
+
+  @include animation-name(ladder);
+  @include animation-duration(3s);
+  @include animation-timing-function(linear);
+  @include animation-direction(normal);
+  @include animation-iteration-count(1);
+  @include animation-delay(0);
+  @include animation-play-state(running);
+  @include animation-fill-mode(forwards);
+
+}
+
+#M {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  @include animation-name(letterM);
+  @include animation-duration(6s);
+  @include animation-timing-function(linear);
+  @include animation-direction(normal);
+  @include animation-iteration-count(1);
+  @include animation-delay(3s);
+  @include animation-play-state(running);
+  @include animation-fill-mode(forwards);
+  color: #0054a6;
+
+}
+
+@include keyframes(ladder) {
+  0% {
+    bottom: -500px;
+  }
+
+  70% {
+    bottom: 0;
+    @include rotateY(90deg);
+  }
+
+  100% {
+    @include rotateX(45deg);
+    bottom: 0;
+  }
+}
+
+@include keyframes(letterM) {
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0;
+  }
+  5% {
+    bottom: 80px;
+    left: 10px;
+  }
+  10% {
+    bottom: 60px;
+    left: 15px;
+  }
+  15% {
+    bottom: 150px;
+    left: 40px;
+  }
+  20% {
+    bottom: 130px;
+    left: 60px;
+  }
+  25% {
+    bottom: 250px;
+    left: 80px;
+  }
+  30% {
+    bottom: 200px;
+    left: 90px;
+  }
+  35% {
+    bottom: 350px;
+    left: 120px;
+  }
+  40% {
+    bottom: 300px;
+    left: 160px;
+  }
+
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1;
+    @include rotateZ(0deg);
+  }
+
+  50% {
+    bottom: 430px;
+    left: 250px;
+    opacity: 1;
+    @include rotateZ(45deg);
+  }
+
+
+  60% {
+    @include rotateZ(170deg);
+    bottom: 420px;
+    left: 270px;
+    opacity: 1;
+  }
+
+  65% {
+    @include rotateZ(170deg);
+    bottom: 400px;
+    left: 270px;
+    opacity: 1;
+  }
+
+  70% {
+    @include rotateZ(180deg);
+    bottom: 400px;
+    left: 270px;
+    opacity: 1;
+  }
+
+
+  100% {
+    @include rotateZ(170deg);
+    bottom: 0px;
+    left: 270px;
+    opacity: 0;
+
+  }
+
+
+}
+
+#C {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  @include animation-name(letterC);
+  @include animation-duration(6s);
+  @include animation-timing-function(linear);
+  @include animation-direction(normal);
+  @include animation-iteration-count(1);
+  @include animation-delay(7s);
+  @include animation-play-state(running);
+  @include animation-fill-mode(forwards);
+
+  &.letter {
+    font-size: 100px;
+    color: red;
+    @include text-shadow(2px 2px 3px #000);
+  }
+}
+
+@include keyframes(letterC) {
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0;
+  }
+  5% {
+    bottom: 80px;
+    left: 10px;
+  }
+  10% {
+    bottom: 60px;
+    left: 15px;
+  }
+  15% {
+    bottom: 150px;
+    left: 40px;
+  }
+  20% {
+    bottom: 130px;
+    left: 60px;
+  }
+  25% {
+    bottom: 250px;
+    left: 80px;
+  }
+  30% {
+    bottom: 200px;
+    left: 90px;
+  }
+  35% {
+    bottom: 350px;
+    left: 120px;
+  }
+  40% {
+    bottom: 300px;
+    left: 160px;
+  }
+
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1;
+  }
+
+  50% {
+    bottom: 460px;
+    left: 280px;
+    opacity: 1;
+    @include scale3d(1,1,1);
+  }
+
+
+  60% {
+    bottom: 420px;
+    left: 270px;
+    opacity: 1;
+    @include scale3d(2,2,5);
+    @include rotateX(180deg);
+    @include rotateY(180deg);
+    /*@include scale3d(1,1,1);*/
+  }
+
+  65% {
+    //@include rotateZ(180deg);
+    bottom: 400px;
+    left: 270px;
+    opacity: 1;
+  }
+
+  70% {
+    //@include rotateZ(180deg);
+    bottom: 350px;
+    left: 270px;
+    opacity: 1;
+    @include scale3d(1,1,1);
+  }
+
+
+  100% {
+    //@include rotateZ(170deg);
+    bottom: 0px;
+    left: 270px;
+    opacity: 0;
+
+  }
+
+
+}
+
+
+
+
+
+
+

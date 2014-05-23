@@ -1,0 +1,1300 @@
+/* line 17, /usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, /usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, /usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, /usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, /usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, /usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, /usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, /usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, /usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 5, src/_summer.scss */
+#main {
+  width: 900px;
+  margin: 10px auto;
+  min-height: 600px;
+  -webkit-perspective: 800;
+  -moz-perspective: 800;
+  -ms-perspective: 800;
+  -o-perspective: 800;
+  perspective: 800;
+  -webkit-perspective-origin: 75% 25%;
+  -moz-perspective-origin: 75% 25%;
+  -ms-perspective-origin: 75% 25%;
+  -o-perspective-origin: 75% 25%;
+  perspective-origin: 75% 25%;
+  position: relative;
+  overflow: hidden;
+  background: #fff; }
+
+/* line 21, src/_summer.scss */
+.letter {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 3px black; }
+
+/* line 27, src/_summer.scss */
+#pool {
+  height: 361px;
+  width: 430px;
+  background: url(/images/pool.png) 0 0 no-repeat;
+  position: absolute;
+  left: 210px;
+  bottom: 0;
+  z-index: 100;
+  /*@include scale3d(.25,.25, .25);
+  @include animation-name(pool);
+  @include animation-duration(3s);
+  @include animation-timing-function(easein);
+  @include animation-direction(normal);
+  @include animation-iteration-count(1);
+  @include animation-delay(0);
+  @include animation-play-state(running);
+  @include animation-fill-mode(forwards);
+  opacity: .75;*/ }
+
+@-moz-keyframes pool {
+  /* line 48, src/_summer.scss */
+  100% {
+    -moz-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1; } }
+
+@-webkit-keyframes pool {
+  /* line 48, src/_summer.scss */
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1; } }
+
+@-o-keyframes pool {
+  /* line 48, src/_summer.scss */
+  100% {
+    -o-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1; } }
+
+@-ms-keyframes pool {
+  /* line 48, src/_summer.scss */
+  100% {
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1; } }
+
+@keyframes pool {
+  /* line 48, src/_summer.scss */
+  100% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1; } }
+
+/* line 54, src/_summer.scss */
+#ladder {
+  height: 500px;
+  width: 95px;
+  position: absolute;
+  bottom: -500px;
+  left: 100px;
+  background: url(/images/ladder.png) 0 0 no-repeat;
+  -webkit-animation-name: ladder;
+  -moz-animation-name: ladder;
+  -ms-animation-name: ladder;
+  -o-animation-name: ladder;
+  animation-name: ladder;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -ms-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -ms-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+/* line 73, src/_summer.scss */
+#M {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-animation-name: letterM;
+  -moz-animation-name: letterM;
+  -ms-animation-name: letterM;
+  -o-animation-name: letterM;
+  animation-name: letterM;
+  -webkit-animation-duration: 6s;
+  -moz-animation-duration: 6s;
+  -ms-animation-duration: 6s;
+  -o-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  color: #0054a6; }
+
+@-moz-keyframes ladder {
+  /* line 91, src/_summer.scss */
+  0% {
+    bottom: -500px; }
+
+  /* line 95, src/_summer.scss */
+  70% {
+    bottom: 0;
+    -moz-transform: rotateY(90deg);
+    transform: rotateY(90deg); }
+
+  /* line 100, src/_summer.scss */
+  100% {
+    -moz-transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    bottom: 0; } }
+
+@-webkit-keyframes ladder {
+  /* line 91, src/_summer.scss */
+  0% {
+    bottom: -500px; }
+
+  /* line 95, src/_summer.scss */
+  70% {
+    bottom: 0;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg); }
+
+  /* line 100, src/_summer.scss */
+  100% {
+    -webkit-transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    bottom: 0; } }
+
+@-o-keyframes ladder {
+  /* line 91, src/_summer.scss */
+  0% {
+    bottom: -500px; }
+
+  /* line 95, src/_summer.scss */
+  70% {
+    bottom: 0;
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg); }
+
+  /* line 100, src/_summer.scss */
+  100% {
+    -o-transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    bottom: 0; } }
+
+@-ms-keyframes ladder {
+  /* line 91, src/_summer.scss */
+  0% {
+    bottom: -500px; }
+
+  /* line 95, src/_summer.scss */
+  70% {
+    bottom: 0;
+    -ms-transform: rotateY(90deg);
+    transform: rotateY(90deg); }
+
+  /* line 100, src/_summer.scss */
+  100% {
+    -ms-transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    bottom: 0; } }
+
+@keyframes ladder {
+  /* line 91, src/_summer.scss */
+  0% {
+    bottom: -500px; }
+
+  /* line 95, src/_summer.scss */
+  70% {
+    bottom: 0;
+    transform: rotateY(90deg); }
+
+  /* line 100, src/_summer.scss */
+  100% {
+    transform: rotateX(45deg);
+    bottom: 0; } }
+
+@-moz-keyframes letterM {
+  /* line 107, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 112, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 116, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 120, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 124, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 128, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 132, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 136, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 140, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 145, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1;
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 152, src/_summer.scss */
+  50% {
+    bottom: 430px;
+    left: 250px;
+    opacity: 1;
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
+  /* line 160, src/_summer.scss */
+  60% {
+    -moz-transform: rotate(170deg);
+    transform: rotate(170deg);
+    bottom: 420px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 167, src/_summer.scss */
+  65% {
+    -moz-transform: rotate(170deg);
+    transform: rotate(170deg);
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 174, src/_summer.scss */
+  70% {
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 182, src/_summer.scss */
+  100% {
+    -moz-transform: rotate(170deg);
+    transform: rotate(170deg);
+    bottom: 0px;
+    left: 270px;
+    opacity: 0; } }
+
+@-webkit-keyframes letterM {
+  /* line 107, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 112, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 116, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 120, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 124, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 128, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 132, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 136, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 140, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 145, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 152, src/_summer.scss */
+  50% {
+    bottom: 430px;
+    left: 250px;
+    opacity: 1;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
+  /* line 160, src/_summer.scss */
+  60% {
+    -webkit-transform: rotate(170deg);
+    transform: rotate(170deg);
+    bottom: 420px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 167, src/_summer.scss */
+  65% {
+    -webkit-transform: rotate(170deg);
+    transform: rotate(170deg);
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 174, src/_summer.scss */
+  70% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 182, src/_summer.scss */
+  100% {
+    -webkit-transform: rotate(170deg);
+    transform: rotate(170deg);
+    bottom: 0px;
+    left: 270px;
+    opacity: 0; } }
+
+@-o-keyframes letterM {
+  /* line 107, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 112, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 116, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 120, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 124, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 128, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 132, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 136, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 140, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 145, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1;
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 152, src/_summer.scss */
+  50% {
+    bottom: 430px;
+    left: 250px;
+    opacity: 1;
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
+  /* line 160, src/_summer.scss */
+  60% {
+    -o-transform: rotate(170deg);
+    transform: rotate(170deg);
+    bottom: 420px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 167, src/_summer.scss */
+  65% {
+    -o-transform: rotate(170deg);
+    transform: rotate(170deg);
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 174, src/_summer.scss */
+  70% {
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 182, src/_summer.scss */
+  100% {
+    -o-transform: rotate(170deg);
+    transform: rotate(170deg);
+    bottom: 0px;
+    left: 270px;
+    opacity: 0; } }
+
+@-ms-keyframes letterM {
+  /* line 107, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 112, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 116, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 120, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 124, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 128, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 132, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 136, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 140, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 145, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1;
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 152, src/_summer.scss */
+  50% {
+    bottom: 430px;
+    left: 250px;
+    opacity: 1;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
+  /* line 160, src/_summer.scss */
+  60% {
+    -ms-transform: rotate(170deg);
+    transform: rotate(170deg);
+    bottom: 420px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 167, src/_summer.scss */
+  65% {
+    -ms-transform: rotate(170deg);
+    transform: rotate(170deg);
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 174, src/_summer.scss */
+  70% {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 182, src/_summer.scss */
+  100% {
+    -ms-transform: rotate(170deg);
+    transform: rotate(170deg);
+    bottom: 0px;
+    left: 270px;
+    opacity: 0; } }
+
+@keyframes letterM {
+  /* line 107, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 112, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 116, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 120, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 124, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 128, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 132, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 136, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 140, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 145, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1;
+    transform: rotate(0deg); }
+
+  /* line 152, src/_summer.scss */
+  50% {
+    bottom: 430px;
+    left: 250px;
+    opacity: 1;
+    transform: rotate(45deg); }
+
+  /* line 160, src/_summer.scss */
+  60% {
+    transform: rotate(170deg);
+    bottom: 420px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 167, src/_summer.scss */
+  65% {
+    transform: rotate(170deg);
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 174, src/_summer.scss */
+  70% {
+    transform: rotate(180deg);
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 182, src/_summer.scss */
+  100% {
+    transform: rotate(170deg);
+    bottom: 0px;
+    left: 270px;
+    opacity: 0; } }
+
+/* line 193, src/_summer.scss */
+#C {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-animation-name: letterC;
+  -moz-animation-name: letterC;
+  -ms-animation-name: letterC;
+  -o-animation-name: letterC;
+  animation-name: letterC;
+  -webkit-animation-duration: 6s;
+  -moz-animation-duration: 6s;
+  -ms-animation-duration: 6s;
+  -o-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-delay: 7s;
+  -moz-animation-delay: 7s;
+  -ms-animation-delay: 7s;
+  -o-animation-delay: 7s;
+  animation-delay: 7s;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+  /* line 207, src/_summer.scss */
+  #C.letter {
+    font-size: 100px;
+    color: red;
+    text-shadow: 2px 2px 3px black; }
+
+@-moz-keyframes letterC {
+  /* line 215, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 220, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 224, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 228, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 232, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 236, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 240, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 244, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 248, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 253, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1; }
+
+  /* line 259, src/_summer.scss */
+  50% {
+    bottom: 460px;
+    left: 280px;
+    opacity: 1;
+    -moz-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  /* line 267, src/_summer.scss */
+  60% {
+    bottom: 420px;
+    left: 270px;
+    opacity: 1;
+    -moz-transform: scale3d(2, 2, 5);
+    transform: scale3d(2, 2, 5);
+    -moz-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    /*@include scale3d(1,1,1);*/ }
+
+  /* line 277, src/_summer.scss */
+  65% {
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 284, src/_summer.scss */
+  70% {
+    bottom: 350px;
+    left: 270px;
+    opacity: 1;
+    -moz-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  /* line 293, src/_summer.scss */
+  100% {
+    bottom: 0px;
+    left: 270px;
+    opacity: 0; } }
+
+@-webkit-keyframes letterC {
+  /* line 215, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 220, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 224, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 228, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 232, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 236, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 240, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 244, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 248, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 253, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1; }
+
+  /* line 259, src/_summer.scss */
+  50% {
+    bottom: 460px;
+    left: 280px;
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  /* line 267, src/_summer.scss */
+  60% {
+    bottom: 420px;
+    left: 270px;
+    opacity: 1;
+    -webkit-transform: scale3d(2, 2, 5);
+    transform: scale3d(2, 2, 5);
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    /*@include scale3d(1,1,1);*/ }
+
+  /* line 277, src/_summer.scss */
+  65% {
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 284, src/_summer.scss */
+  70% {
+    bottom: 350px;
+    left: 270px;
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  /* line 293, src/_summer.scss */
+  100% {
+    bottom: 0px;
+    left: 270px;
+    opacity: 0; } }
+
+@-o-keyframes letterC {
+  /* line 215, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 220, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 224, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 228, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 232, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 236, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 240, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 244, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 248, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 253, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1; }
+
+  /* line 259, src/_summer.scss */
+  50% {
+    bottom: 460px;
+    left: 280px;
+    opacity: 1;
+    -o-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  /* line 267, src/_summer.scss */
+  60% {
+    bottom: 420px;
+    left: 270px;
+    opacity: 1;
+    -o-transform: scale3d(2, 2, 5);
+    transform: scale3d(2, 2, 5);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    /*@include scale3d(1,1,1);*/ }
+
+  /* line 277, src/_summer.scss */
+  65% {
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 284, src/_summer.scss */
+  70% {
+    bottom: 350px;
+    left: 270px;
+    opacity: 1;
+    -o-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  /* line 293, src/_summer.scss */
+  100% {
+    bottom: 0px;
+    left: 270px;
+    opacity: 0; } }
+
+@-ms-keyframes letterC {
+  /* line 215, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 220, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 224, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 228, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 232, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 236, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 240, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 244, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 248, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 253, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1; }
+
+  /* line 259, src/_summer.scss */
+  50% {
+    bottom: 460px;
+    left: 280px;
+    opacity: 1;
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  /* line 267, src/_summer.scss */
+  60% {
+    bottom: 420px;
+    left: 270px;
+    opacity: 1;
+    -ms-transform: scale3d(2, 2, 5);
+    transform: scale3d(2, 2, 5);
+    -ms-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    /*@include scale3d(1,1,1);*/ }
+
+  /* line 277, src/_summer.scss */
+  65% {
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 284, src/_summer.scss */
+  70% {
+    bottom: 350px;
+    left: 270px;
+    opacity: 1;
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  /* line 293, src/_summer.scss */
+  100% {
+    bottom: 0px;
+    left: 270px;
+    opacity: 0; } }
+
+@keyframes letterC {
+  /* line 215, src/_summer.scss */
+  0% {
+    opacity: 1;
+    bottom: 0;
+    left: 0; }
+
+  /* line 220, src/_summer.scss */
+  5% {
+    bottom: 80px;
+    left: 10px; }
+
+  /* line 224, src/_summer.scss */
+  10% {
+    bottom: 60px;
+    left: 15px; }
+
+  /* line 228, src/_summer.scss */
+  15% {
+    bottom: 150px;
+    left: 40px; }
+
+  /* line 232, src/_summer.scss */
+  20% {
+    bottom: 130px;
+    left: 60px; }
+
+  /* line 236, src/_summer.scss */
+  25% {
+    bottom: 250px;
+    left: 80px; }
+
+  /* line 240, src/_summer.scss */
+  30% {
+    bottom: 200px;
+    left: 90px; }
+
+  /* line 244, src/_summer.scss */
+  35% {
+    bottom: 350px;
+    left: 120px; }
+
+  /* line 248, src/_summer.scss */
+  40% {
+    bottom: 300px;
+    left: 160px; }
+
+  /* line 253, src/_summer.scss */
+  45% {
+    bottom: 430px;
+    left: 230px;
+    opacity: 1; }
+
+  /* line 259, src/_summer.scss */
+  50% {
+    bottom: 460px;
+    left: 280px;
+    opacity: 1;
+    transform: scale3d(1, 1, 1); }
+
+  /* line 267, src/_summer.scss */
+  60% {
+    bottom: 420px;
+    left: 270px;
+    opacity: 1;
+    transform: scale3d(2, 2, 5);
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    /*@include scale3d(1,1,1);*/ }
+
+  /* line 277, src/_summer.scss */
+  65% {
+    bottom: 400px;
+    left: 270px;
+    opacity: 1; }
+
+  /* line 284, src/_summer.scss */
+  70% {
+    bottom: 350px;
+    left: 270px;
+    opacity: 1;
+    transform: scale3d(1, 1, 1); }
+
+  /* line 293, src/_summer.scss */
+  100% {
+    bottom: 0px;
+    left: 270px;
+    opacity: 0; } }
