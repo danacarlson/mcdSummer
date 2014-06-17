@@ -1,5 +1,4 @@
-body {
-
+body { 
 }
 
 #main {
@@ -421,9 +420,14 @@ body {
   left: 200px;
 
   width: 100px;
-  height: 100px;
+  height: 100px; 
+  display: none;  
+  
+  &.on {
+    display: block;
+  }
 
-  div {
+  &.on div {
     position: absolute;
     top: 0;
     left: 0;
@@ -432,21 +436,26 @@ body {
     background: blue;
     opacity: 0;
     @include border-radius(50%);
-    @include animation-duration(.5s);
+    @include animation-duration(1s);
     @include animation-timing-function(linear);
     @include animation-direction(normal);
     @include animation-iteration-count(1);
     @include animation-delay(0);
     @include animation-play-state(running);
     @include animation-fill-mode(forwards);
+    
+    #splash1 {
+      @include animation-name(splash1);
+    }
+    #splash2 {
+      @include animation-name(splash2);
+    }
+    #splash3 {
+      @include animation-name(splash3);
+    }
   }
 
-  #splash1 {
-    @include animation-name(splash1);
-  }
-  #splash2 {
-    @include animation-name(splash2);
-  }
+  
 
 
 }
@@ -491,6 +500,46 @@ body {
     left: 90px;
     top: 0px;
     opacity: 1;
+  }
+}
+
+@include keyframes(splash3) {
+  0% {
+    left: 250px;
+    top: -100px;
+    opacity: 1;
+  }
+  30% {
+    left: 100px;
+    top: -350px;
+    opacity: 1;
+  }
+
+  40% {
+    left: 80px;
+    top: -250px;
+    opacity: 1;
+    @include scale3d(2,2,-2);
+    z-index: 105; 
+  }
+  
+  70% {
+    left: 60px;
+    top: -100px;
+    opacity: 1;
+    z-index: 105; 
+  }
+  90% {
+    left: 40px;
+    top: 100px;
+    opacity: 1;
+    z-index: 105; 
+  }
+  100% {
+    left: 40px;
+    top: 200px;
+    opacity: 0;
+    z-index: 105; 
   }
 }
 

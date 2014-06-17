@@ -23,7 +23,7 @@
             <div id="C" class="letter">C</div>
             <div id="D" class="letter">D</div>
 
-            <div id="splashgroup">
+            <div id="splashgroup" class="on">
                 <div id="splash1"></div>
                 <div id="splash2"></div>
                 <div id="splash3"></div>
@@ -40,6 +40,14 @@
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript">
+        
+        $('#M').on('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
+            function(e) {
+              //$('#splashgroup').addClass('on');
+              
+            });
+        </script>
 
     </body>
 </html>
