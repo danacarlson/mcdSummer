@@ -1,6 +1,3 @@
-body { 
-}
-
 #main {
   width: 900px;
   margin: 10px auto;
@@ -11,6 +8,12 @@ body {
   overflow: hidden;
   background: #fff;
   font-family: 'Lato', sans-serif;
+  
+  &.on {
+   #pool, #ladder {
+    display: none;
+   }
+  }
 }
 
 .letter {
@@ -26,16 +29,6 @@ body {
   left: 210px;
   bottom: 0;
   z-index: 100;
-  /*@include scale3d(.25,.25, .25);
-  @include animation-name(pool);
-  @include animation-duration(3s);
-  @include animation-timing-function(easein);
-  @include animation-direction(normal);
-  @include animation-iteration-count(1);
-  @include animation-delay(0);
-  @include animation-play-state(running);
-  @include animation-fill-mode(forwards);
-  opacity: .75;*/
 }
 
 @include keyframes(pool) {
@@ -124,7 +117,7 @@ body {
     left: 80px;
   }
   30% {
-    bottom: 200px;
+    bottom: 220px;
     left: 90px;
   }
   35% {
@@ -311,7 +304,7 @@ body {
   @include animation-fill-mode(forwards);
 
   &.letter {
-    font-size: 25px;
+    font-size: 35px;
     color: #fff200;
     @include text-shadow(2px 2px 3px #d37c3c);
   }
@@ -376,14 +369,14 @@ body {
     opacity: 1;
     @include rotateX(-180deg);
     @include rotateY(-180deg);
-    /*@include scale3d(1,1,1);*/
   }
 
   65% {
-    @include scale3d(5,5,5);
+    @include scale3d(3,3,3);
     bottom: 400px;
     left: 320px;
     opacity: 1;
+    @include rotateX(-90deg);
   }
 
   70% {
@@ -396,6 +389,7 @@ body {
 
   80% {
     @include rotateY(180deg);
+    @include rotateX(-180deg);
     bottom: 200px;
     left: 320px;
     opacity: 1;
@@ -408,143 +402,49 @@ body {
     left: 320px;
     opacity: 0;
     @include scale3d(3, 3, 3);
-
   }
 
 
 }
 
-#splashgroup {
+#end-msg {
+  font-size: 60px;
+  color: #00aeef;
   position: absolute;
-  bottom: 6px;
-  left: 200px;
+  top: 250px;
+  margin: 0 auto;
+  opacity: 0;
+  text-align: center;
+  width: 900px;
 
-  width: 100px;
-  height: 100px; 
-  display: none;  
-  
-  &.on {
-    display: block;
-  }
+}
 
-  &.on div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    background: blue;
-    opacity: 0;
-    @include border-radius(50%);
-    @include animation-duration(1s);
+#main.on {
+  #end-msg {
+    @include animation-name(msg);
+    @include animation-duration(3s);
     @include animation-timing-function(linear);
     @include animation-direction(normal);
     @include animation-iteration-count(1);
     @include animation-delay(0);
     @include animation-play-state(running);
     @include animation-fill-mode(forwards);
-    
-    #splash1 {
-      @include animation-name(splash1);
-    }
-    #splash2 {
-      @include animation-name(splash2);
-    }
-    #splash3 {
-      @include animation-name(splash3);
-    }
-  }
-
-  
-
-
-}
-
-@include keyframes(splash1) {
-  30% {
-    left: -75px;
-    top: -100px;
-    opacity: 1;
-  }
-
-  60% {
-    left: -125px;
-    top: -130px;
-    opacity: 1;
-  }
-  100% {
-    left: -170px;
-    top: 0px;
-    opacity: 0;
-  }
-}
-
-@include keyframes(splash2) {
-  0% {
-    left: 200px;
-    top: -100px;
-    opacity: 1;
-  }
-  30% {
-    left: 150px;
-    top: -280px;
-    opacity: 1;
-  }
-
-  60% {
-    left: 100px;
-    top: -130px;
-    opacity: 1;
-  }
-  100% {
-    left: 90px;
-    top: 0px;
-    opacity: 1;
-  }
-}
-
-@include keyframes(splash3) {
-  0% {
-    left: 250px;
-    top: -100px;
-    opacity: 1;
-  }
-  30% {
-    left: 100px;
-    top: -350px;
-    opacity: 1;
-  }
-
-  40% {
-    left: 80px;
-    top: -250px;
-    opacity: 1;
-    @include scale3d(2,2,-2);
-    z-index: 105; 
   }
   
-  70% {
-    left: 60px;
-    top: -100px;
-    opacity: 1;
-    z-index: 105; 
-  }
-  90% {
-    left: 40px;
-    top: 100px;
-    opacity: 1;
-    z-index: 105; 
-  }
-  100% {
-    left: 40px;
-    top: 200px;
-    opacity: 0;
-    z-index: 105; 
-  }
+  
 }
 
-
-
-
-
+@include keyframes(msg) {
+  0% {
+    opacity: .25;
+    @include scale3d(.25, .25, .25);
+    @include rotateY(180deg);
+  }
+  
+  100% { 
+    opacity: 1;
+      @include scale3d(1, 1, 1);
+       @include rotateY(0deg);
+  }  
+}
 
